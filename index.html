@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://fb.me/react-0.12.1.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/jsx" src="src/typeAheadForm.js"></script>
+    <script type="text/jsx" src="src/typeAheadList.js"></script>
+    <script type="text/jsx" src="src/typeAheadContainer.js"></script>
+    <script type="text/jsx">
+      var apiUrl = "https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=10"
+      $(function() {
+        React.render(<TypeAheadContainer url={apiUrl} />, document.body)
+      })
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

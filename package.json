@@ -1,0 +1,10 @@
+{
+  "name": "wp_post_typeahead",
+  "version": "1.0.0",
+  "description": "Example for WellMatch brownbag",
+  "scripts": {
+    "start": "ruby -run -e httpd . -p5000"
+  },
+  "author": "Tim Tyrrell",
+  "license": "ISC"
+}
