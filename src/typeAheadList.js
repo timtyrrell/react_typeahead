@@ -1,11 +1,10 @@
 var TypeAheadList = React.createClass({
   render: function() {
-    var postListItems = []
-    if(this.props.posts){
-      this.props.posts.forEach(function(post){
-        postListItems.push(<li key={post.ID}>{post.title}</li>)
+    var postListItems = this.props.posts.map(function(post){
+        return(
+          <li key={post.ID}>{post.title}</li>
+        )
       })
-    }
 
     return (
       <ol>
