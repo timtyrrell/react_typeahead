@@ -13,7 +13,7 @@ var TypeAheadContainer = React.createClass({
         dataType: 'jsonp',
         type: 'GET',
         success: function(data) {
-          this.setState({posts: data.posts})
+          this.setState({posts: data.posts.slice(0,5)})
         }.bind(this),
         error: function(xhr, status, err) {
           console.error("BAD")
